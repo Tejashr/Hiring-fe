@@ -31,7 +31,7 @@ function Recregister(){
                                 setPassword("");
                                 setUsername("");
                                 setPhone("");
-                                history.push(`/login`);
+                                history.push(`/reclogin`);
                             }}>
                             <div class="input-group form-group">
                                     <div class="input-group-prepend">
