@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { GetrecruiterbyEmail,Postreclogin } from "./api";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faKey, faMailBulk} from '@fortawesome/free-solid-svg-icons'
+import { faKey, faMailBulk, faScrewdriver} from '@fortawesome/free-solid-svg-icons'
 
 function Reclogin() {
 
@@ -18,7 +18,7 @@ function Reclogin() {
                 <div class="d-flex justify-content-center h-100">
                     <div class="card1">
                         <div class="card-header">
-                            <h3>Recruiter Login</h3>
+                            <h3><FontAwesomeIcon icon={faScrewdriver}></FontAwesomeIcon> Recruiter Login</h3>
                         </div>
                         <div class="card-body">
                             <form onSubmit={async (e) => {

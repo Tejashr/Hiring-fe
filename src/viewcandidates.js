@@ -9,7 +9,7 @@ function Viewcandidates(props) {
         let users = await GetrecruiterbyId(props.match.params.id);
         let userEmail=users.data.email;
         console.log(userEmail)
-        let appliedjob=await Getcandidatesdetailsbyemail(userEmail)
+        let appliedjob=await Getcandidatesdetailsbyemail(userEmail);
         setuserData(appliedjob.data)
         console.log(appliedjob.data)
     }, [])

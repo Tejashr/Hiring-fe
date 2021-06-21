@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { Postrecregister } from "./api";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faKey, faMailBulk, faPhone, faUser} from '@fortawesome/free-solid-svg-icons'
+import { faKey, faMailBulk, faPhone, faScrewdriver, faUser} from '@fortawesome/free-solid-svg-icons'
 
 function Recregister(){
 
@@ -21,7 +21,7 @@ function Recregister(){
                 <div class="d-flex justify-content-center h-100">
                     <div class="card1">
                         <div class="card-header">
-                            <h3>Recruiter Register</h3>
+                            <h3><FontAwesomeIcon icon={faScrewdriver}></FontAwesomeIcon> Recruiter Register</h3>
                         </div>
                         <div class="card-body">
                             <form onSubmit={async (e) => {
