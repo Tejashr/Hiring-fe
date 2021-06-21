@@ -41,7 +41,6 @@ html,body{
   background-image: url('./images/bgimg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  
   font-family: 'Numans', sans-serif;
   }
   
@@ -109,4 +108,8 @@ html,body{
   
   .links a{
   margin-left: 4px;
+  }
+
+  .bgcolor{
+    background-color: rgb(70, 73, 69);
   }
