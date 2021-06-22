@@ -24,7 +24,7 @@ function Job(props){
         <>
          <div className="container">
              <div className="row float-right mt-5">
-                 <button class="btn btn-outline-secondary up-lift"  onClick={()=>{
+                 <button class="btn btn-secondary up-lift"  onClick={()=>{
                             
                              history.push(`/applied/${props.match.params.id}`);
                         }}>Applied jobs</button>
