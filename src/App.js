@@ -18,6 +18,7 @@ import Addcompany from './addcompany';
 import job from './job';
 import Applied from './applied';
 import viewcandidates from './viewcandidates';
+import Home from './home';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <Route path="/register" component={Register} exact />
             <Route path="/reclogin" component={Reclogin} exact />
             <Route path="/recregister" component={Recregister} exact />
+            <Route path="/" component={Home} exact />
             <ProtectedRoute path="/addcompany/:id" component={Addcompany} exact />
             <ProtectedRoute path="/job/:id" component={job} exact />
             <ProtectedRoute path="/applied/:id" component={Applied} exact />
