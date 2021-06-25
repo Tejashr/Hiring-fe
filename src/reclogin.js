@@ -34,6 +34,7 @@ function Reclogin() {
                                     history.push(`/addcompany/${users.data._id}`)
                                 }
                                 else {
+                                    alert("Email or password is incorrect")
                                     history.push(`/reclogin`);
                                 }
                                }

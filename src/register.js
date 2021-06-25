@@ -29,7 +29,13 @@ function Register(){
                         <div class="card-body">
                             <form onSubmit={async (e) => {
                                 e.preventDefault();
-                                await Postregister(userData);
+                                let reg= await Postregister(userData);
+                                if(reg.data.message==="email already exist"){
+                                    alert("Email already in use");
+                                }
+                                else{
+                                    alert("successfully registered");
+                                }
                                 setEmail("");
                                 setPassword("");
                                 setUsername("");
