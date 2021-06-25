@@ -22,6 +22,8 @@ function Viewcandidates(props) {
                         <th scope="col">Student Name</th>
                         <th scope="col">College</th>
                         <th scope="col">Branch</th>
+                        <th scope="col">Company Name</th>
+                        <th scope="col">Job Title</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -32,6 +34,9 @@ function Viewcandidates(props) {
                                     <th scope="row">{use.name}</th>
                                     <td>{use.college}</td>
                                     <td>{use.branch}</td>
+                                    <td>{use.companyname}</td>
+                                    <td>{use.jobtitle}</td>
+                                    
                                 </tr>
                             )
                         })

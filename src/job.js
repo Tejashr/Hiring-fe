@@ -60,9 +60,15 @@ function Job(props){
                                             </div>
                                             <div class="d-flex justify-content-between mt-2 float-right">
                                             <button  onClick={async () => {
-                                                    let details={email:userData.email,name:userData.username,phone:userData.phone,college:userData.college,year:userData.year,branch:userData.branch,recemail:user.email,jobId:user._id,companyname:user.companyname,jobtitle:user.jobtitle,date:user.date}
-                                                    console.log(details);
-                                                   await Postappliedjobs(details)
+                                                   let unique=userData.email+user._id;
+                                                   let details={email:userData.email,name:userData.username,phone:userData.phone,college:userData.college,year:userData.year,branch:userData.branch,recemail:user.email,jobId:user._id,companyname:user.companyname,jobtitle:user.jobtitle,date:user.date,unique:unique}
+                                                     console.log(details);
+                                                let applied=  await Postappliedjobs(details)
+                                                if(applied.data.message==="Already applied to this job"){
+                                                    alert("You Have already applied to this job");
+                                                }else{
+                                                    alert("Successfully applied to this job")
+                                                }
                                                 }} class="btn btn-outline-secondary up-lift">Apply</button>
                                             </div>
                                         </div>
