@@ -6,8 +6,10 @@ function Applied(props) {
     let [userData,setuserData]=useState([]);
 
     useEffect(async () => {
+        //getting the details of candidates by their id
         let users = await GetuserbyId(props.match.params.id);
         let userEmail=users.data.email;
+        //getting the data of applied jobs by user email
         let appliedjob=await GetappliedjobId(userEmail)
         setuserData(appliedjob.data)
     }, [])

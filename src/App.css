@@ -54,6 +54,7 @@ html,body{
   margin-bottom: auto;
   width: 400px;
   background-color: rgba(0,0,0,0.5) !important;
+  border-radius: 10%;
   }
   
   .extra{

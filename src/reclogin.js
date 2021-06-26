@@ -28,6 +28,7 @@ function Reclogin() {
                                 let logindata = await Postreclogin(userData);
                                 window.localStorage.setItem("app_token", logindata.data.token)
                                 let token = logindata.data.token;
+                                //checking if token is present then go to next page otherwise stay in same page
                                 if (token) {
                                     let users = await GetrecruiterbyEmail(email);
                                     console.log(users.data._id)
